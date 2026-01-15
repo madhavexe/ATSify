@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+.section-title{
+    font-family:'Cambria, Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.box-title, .logo, .btn{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.para{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#childone,
+#childtwo {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#childone {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 70px 8%;
+    background: linear-gradient(180deg, #020617, #020617);
+    /* background:transparent; */
+    background: white;
+    /* color:black; */
+}
+
+#childone>div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#heading {
+    font-size:16px !important;
+    font-weight: 700;
+    color: black !important;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+#childone p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #4a5565;
+}
+
+#childone ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#childone ul li {
+    font-size: 12px;
+    color: #4a5565;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#childone ul li:hover {
+    color: #38bdf8;
+    transform: translateX(4px);
+}
+form {
+    margin-top: 10px;
+}
+
+form input {
+    width: 80%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    /* background: #020617; */
+    background: transparent;
+    border: 1px solid black;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+}
+
+form input::placeholder {
+    color: black;
+}
+
+form button {
+    margin-top: 12px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    /* background: linear-gradient(90deg, #38bdf8, #0ea5e9); */
+    background: #020617;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+.icondiv {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+#childtwo {
+    border-top: 1px solid #1e293b;
+    background: #020617;
+    /* background: #31B9F5; */
+    background-color: black;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: #94a3b8; */
+    /* color: black; */
+    color: white;
+    font-weight: 600;
+}
+
+#childtwo p {
+    font-size: 13px;
+}
+#childtwo ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+#childtwo ul li {
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#childtwo ul li:hover {
+    color: #38bdf8;
+}
+@media (max-width: 992px) {
+    #childone {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    #childone {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+    }
+
+    #childtwo {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #childtwo ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
