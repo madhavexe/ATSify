@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='capitalize w-full rounded-4xl overflow-hidden shadow-lg'>
+        <div data-aos='fade-up' className='border border-slate-200 capitalize w-full shadow-lg overflow-hidden rounded-2xl'>
 
             <div id="childone">
-                <div>
+                <div data-aos='fade-up'>
                     <p id="heading">marketing pro</p>
 
                     <p>Lorem ipsum dolor sit amet consectetur<br /> adipisicing
@@ -19,7 +19,7 @@ const Footer = () => {
 
                 </div>
 
-                <div>
+                <div data-aos='fade-up'>
                     <p id="heading">services</p>
                     <ul>
                         <li>digital strategy</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div>
+                <div data-aos='fade-up'>
                     <p id="heading">company</p>
                     <ul>
                         <li>about us </li>
@@ -41,18 +41,18 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div>
+                <div data-aos='fade-up'>
                     <p id="heading">stay updated</p>
-                    <p cn>Enter your email and sign up with us</p>
+                    <p>Enter your email and sign up with us</p>
                     <form>
-                        <input type="email" placeholder='Enter your email' ></input><br />
+                        <input className='text-black! placeholder-black!' type="email" placeholder='Enter your email' ></input><br />
                         <button className='shadow-lg text-white'>Subscribe</button>
                     </form>
 
                 </div>
 
             </div>
-            <div id="childtwo">
+            <div data-aos='fade-up' id="childtwo">
                 <p>@2025 atsify all rights limited</p>
                 <div>
                     <ul>

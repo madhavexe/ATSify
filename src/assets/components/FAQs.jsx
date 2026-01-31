@@ -2,13 +2,15 @@ import React from 'react'
 
 const FAQs = ({ question, answer }) => {
     return (
-        <div className='w-full'>
-            <details className="cursor-pointer w-[40rem] p-[7px] border-2 border-[gray-500] rounded-[10px] #bg-[rgba(225,188,188,0.7)] bg-gradient-to-r from-[#fdd7e0] to-[#f6b8c7]
-max-[1024px]:w-[35rem] max-[768px]:w-[90%] max-[480px]:w-[95%]">
-                <summary>{question}</summary>
-                <p className="mt-[10px]">{answer}</p>
-            </details>
+        <div data-aos='fade-right'> 
+            <div className='border border-slate-200 w-full bg-[#2e2e2e] text-white #bg-gradient-to-r #from-[#fdd7e0] #to-[#f6b8c7] shadow-lg py-[7px] pl-[10px] rounded-lg hover:bg-[#444444] transiton duration-500'>
+                <details className="text-[14px] md:text-[16px] cursor-pointer lg:w-[35rem]">
+                    <summary>{question}</summary>
+                    <p className="mt-[10px]">{answer}</p>
+                </details>
+            </div>
         </div>
+
     )
 }
 

@@ -5,37 +5,37 @@ import Footer from '../assets/components/Footer';
 
 const ResumeUpload = () => {
   return (
-    <div className="min-h-screen p-7 md:px-10 bg-[url('./../public/Resume-BG.svg')]! bg-cover flex flex-col items-center justify-center gap-20">
+    <div className="min-h-screen md:p-7 md:px-10 bg-[url('./../public/Resume-BG.svg')]! bg-cover flex flex-col items-center justify-center gap-10 md:gap-20">
       <Navbar />
       <div>
         <Heading title={'Smart Feedback for your dream job'} para={'Drop your resume for an ATS score and improvement tips.'} />
         </div>
-      <div className="w-full lg:w-[60%] m-auto relative rounded-2xl bg-white/60 backdrop-blur-xl px-6 py-8 sm:px-10 shadow-[0_25px_70px_-15px_rgba(0,0,0,0.15)] ring-1 ring-white/40">
+      <div data-aos='fade-down' className="w-full lg:w-[60%] m-auto relative rounded-2xl bg-white/60 backdrop-blur-xl px-6 py-8 sm:px-10 shadow-[0_25px_70px_-15px_rgba(0,0,0,0.15)] ring-1 ring-white/40">
         <form className="space-y-6">
       
-          <div>
+          <div data-aos='fade-up'>
             <label className="block text-xs font-medium text-gray-600 mb-1">
               Company Name
             </label>
             <input
               type="text"
-              className="w-full rounded-lg border border-gray-200 bg-white/80 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400/60"
+              className="w-full text-black! placeholder-black! rounded-lg border border-gray-200 bg-white/80 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400/60"
             />
           </div>
 
        
-          <div>
+          <div data-aos='fade-up'>
             <label className="block text-xs font-medium text-gray-600 mb-1">
               Job Title
             </label>
             <input
               type="text"
-              className="w-full rounded-lg border border-gray-200 bg-white/80 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400/60"
+              className="w-full text-black! placeholder-black! rounded-lg border border-gray-200 bg-white/80 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400/60"
             />
           </div>
 
        
-          <div>
+          <div data-aos='fade-up'>
             <label className="block text-xs font-medium text-gray-600 mb-1">
               Job Description
             </label>
@@ -46,8 +46,8 @@ const ResumeUpload = () => {
             />
           </div>
 
-        
-          <div>
+         
+          <div data-aos='fade-up'>
             <label className="block text-xs font-medium text-gray-600 mb-2">
               Upload Resume
             </label>
@@ -65,12 +65,14 @@ const ResumeUpload = () => {
           </div>
 
          
-          <button
+          <div data-aos='fade-up'>
+            <button
             type="submit"
             className="w-full rounded-full bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-500 py-3 text-sm font-medium text-white shadow-[0_12px_30px_-8px_rgba(79,70,229,0.8)] hover:brightness-110 active:scale-[0.98] transition"
           >
             Save & Analyze Resume
           </button>
+          </div>
         </form>
       </div>
 

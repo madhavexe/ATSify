@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
 
-      <nav className='flex justify-between items-center p-3 px-5 bg-amber-50 w-full md:w-[80%] lg:w-[70%] xl:w-[50%] mx-auto rounded-full relative z-50'>
+      <nav data-aos="fade-right" className='flex justify-between items-center p-5 md:p-3 px-5 bg-white w-full md:w-[80%] lg:w-[70%] xl:w-[50%] mx-auto md:rounded-full relative z-50'>
         <Logo />
 
 
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {isOpen && (
         <div className='fixed inset-0 bg-black/40 z-40 flex justify-center items-start pt-20'>
-          <div className='bg-white w-[90%] max-w-sm rounded-2xl p-6 relative animate-slideDown'>
+          <div className='bg-white w-[80%] max-w-sm rounded-2xl p-6 relative animate-slideDown'>
             
 
             <button

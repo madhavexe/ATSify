@@ -9,7 +9,7 @@ import FaqParent from '../assets/components/FaqParent'
 
 const Hero = () => {
   return (
-    <div className='bg-[url("./../public/Resume-BG.svg")]! bg-cover w-screen lg:w-full p-7 lg:p-10 flex flex-col items-center gap-35'>
+    <div className='bg-[url("./../public/Resume-BG.svg")]! bg-cover w-screen lg:w-full md:p-5 lg:p-7 flex flex-col items-center gap-10 md:gap-25'>
         <Navbar />
         <ResumeCards />
         <HowItWorks />
@@ -22,3 +22,5 @@ const Hero = () => {
 }
 
 export default Hero
+
+

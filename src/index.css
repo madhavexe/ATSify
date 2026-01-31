@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
-.section-title{
-    font-family:'Cambria, Cochin', Georgia, Times, 'Times New Roman', serif;
+body{
+    overflow-x: hidden;
 }
 
-.box-title, .logo, .btn{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.section-title {
+    font-family: 'Cambria, Cochin', Georgia, Times, 'Times New Roman', serif;
 }
 
-.para{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.box-title,
+.logo,
+.bton {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.para {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -36,13 +42,14 @@
 }
 
 #heading {
-    font-size:16px !important;
+    font-size: 16px !important;
     font-weight: 700;
     color: black !important;
     letter-spacing: 0.5px;
     text-transform: capitalize;
     margin-bottom: 8px;
 }
+
 #childone p {
     font-size: 12px;
     line-height: 1.7;
@@ -69,6 +76,7 @@
     color: #38bdf8;
     transform: translateX(4px);
 }
+
 form {
     margin-top: 10px;
 }
@@ -98,17 +106,20 @@ form button {
     border-radius: 8px;
     border: none;
     /* background: linear-gradient(90deg, #38bdf8, #0ea5e9); */
-    background: #020617;
+    background: #2e2e2e;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     transition: 0.3s ease;
+
+    &:hover{
+        background-color: #444444;
+        transition: all;
+        transition-duration: .5s;
+    }
 }
 
-form button:hover {
-    opacity: 0.85;
-    transform: translateY(-2px);
-}
+
 .icondiv {
     display: flex;
     gap: 12px;
@@ -133,6 +144,7 @@ form button:hover {
 #childtwo p {
     font-size: 13px;
 }
+
 #childtwo ul {
     list-style: none;
     display: flex;
@@ -140,6 +152,7 @@ form button:hover {
     padding: 0;
     margin: 0;
 }
+
 #childtwo ul li {
     font-size: 13px;
     cursor: pointer;
@@ -149,6 +162,7 @@ form button:hover {
 #childtwo ul li:hover {
     color: #38bdf8;
 }
+
 @media (max-width: 992px) {
     #childone {
         grid-template-columns: repeat(2, 1fr);
@@ -172,4 +186,3 @@ form button:hover {
         gap: 8px;
     }
 }
-

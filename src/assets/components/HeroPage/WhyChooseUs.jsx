@@ -5,9 +5,9 @@ import WhyChooseUsBox from './WhyChooseUsBox'
 
 const WhyChooseUs = () => {
   return (
-    <div className='px-10 flex flex-col gap-15 justify-center items-center'>
+    <div className='bg-white rounded-2xl border border-slate-200 py-10 md:py-15 lg:p-20 flex flex-col gap-15 justify-center items-center'>
         <SectionTitle title={'Why Choose Our ATS Resume Analyzer?'}/>
-        <div className='flex justify-center items-center gap-15 flex-wrap'>
+        <div className='flex justify-center items-center gap-10 md:gap-15 flex-wrap'>
             <WhyChooseUsBox icon={<Brain size={88} />} title={'ATS-Friendly Resume Analysis'} para={'Get insights based on real Applicant Tracking System rules used by recruiters and companies.'} />
             <WhyChooseUsBox icon={<WholeWord size={88} />} title={'Keyword & Role Matching'} para={'Identify missing keywords and understand how well your resume matches specific job descriptions.'} />
             <WhyChooseUsBox icon={<AppWindow size={88} />} title={'Application Tracking'} para={'Keep all your job applications organized and monitor their progress from one dashboard.'} />

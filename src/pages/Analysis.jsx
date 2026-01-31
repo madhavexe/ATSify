@@ -7,7 +7,7 @@ const Analysis = () => {
         <div className="mx-auto shadow-lg overflow-hidden">
 
             {/* <!-- Header --> */}
-            <div class="flex items-center justify-between px-6 py-4 border-b">
+            <div  data-aos='fade-up' class="flex items-center justify-between px-6 py-4 border-b">
                 <div class="flex items-center gap-2 text-sm text-gray-600">
                     <HomeIcon />
                     <span class="font-medium text-gray-900">DevOps Engineer</span>
@@ -20,11 +20,11 @@ const Analysis = () => {
             </div>
 
             {/* <!-- Main Content --> */}
-            <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+            <div  data-aos='fade-up' class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
 
                 {/* <!-- Resume Preview --> */}
-                <div class="lg:col-span-1 bg-[url('./../public/Resume-BG.svg')]! bg-cover from-indigo-100 to-pink-100 rounded-xl p-4">
-                    <div class="bg-white rounded-xl p-4 shadow">
+                <div  data-aos='fade-up' class="lg:col-span-1 bg-[url('./../public/Resume-BG.svg')]! bg-cover from-indigo-100 to-pink-100 rounded-xl p-4">
+                    <div  data-aos='fade-up' class="bg-white rounded-xl p-4 shadow">
                         <h2 class="font-semibold text-gray-900">Daniel Destefanis</h2>
                         <p class="text-xs text-gray-500 mb-4">555-321-1234 · danieldesign</p>
 
@@ -50,10 +50,10 @@ const Analysis = () => {
                 </div>
 
                 {/* <!-- Review Panel --> */}
-                <div class="lg:col-span-2 space-y-6">
+                <div  data-aos='fade-up' class="lg:col-span-2 space-y-6">
 
                     {/* <!-- Score Card --> */}
-                    <div class="bg-white rounded-xl shadow p-6">
+                    <div  data-aos='fade-up' class="bg-white rounded-xl shadow p-6">
                         <h2 class="text-lg font-semibold mb-4">Resume Review</h2>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -96,7 +96,7 @@ const Analysis = () => {
                     </div>
 
                     {/* <!-- ATS Score --> */}
-                    <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
+                    <div  data-aos='fade-up' class="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
                         <div class="flex items-center gap-3 mb-3">
                             <span class="bg-emerald-500 text-white px-3 py-1 rounded-full text-sm">
                                 ATS Score · 88/100
@@ -110,7 +110,7 @@ const Analysis = () => {
                     </div>
 
                     {/* <!-- Expandable Sections --> */}
-                    <div class="space-y-3">
+                    <div  data-aos='fade-up' class="space-y-3">
                         <details class="bg-white rounded-xl shadow p-4">
                             <summary class="font-semibold cursor-pointer">Tone & Style</summary>
                             <p class="text-sm text-gray-600 mt-2">Improve clarity and consistency.</p>
