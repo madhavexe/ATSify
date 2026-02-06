@@ -22,9 +22,13 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
 import Button from './Button'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const localSignIn = localStorage.getItem('signUp')
+  const navigate = useNavigate()
 
   return (
     <>
@@ -34,10 +38,18 @@ const Navbar = () => {
 
 
         <div className='hidden md:flex gap-5 items-center'>
-          <Button btn='Sign In' path='/SignIn' />
+          {!localSignIn ? <Button btn='Sign In' path='/SignIn' /> : ''}
+          {/* <Button btn='Sign In' path='/SignIn' /> */}
           <Button btn='Upload Resume' path='/ResumeUpload' />
-          <Button btn='Analysis' path='/Analysis' />
+          {/* <Button btn='Analysis' path='/Analysis' /> */}
+          {localSignIn ? <Button btn='Analysis' path='/Analysis' /> : ''}
           <Button btn='Contact Us' path='/ContactUs' />
+          {localSignIn ? <button data-aos="fade-down" className='bton shadow-lg bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9]   #bg-blue-500 rounded-full p-1 px-2 lg:p-2 lg:px-3 text-[14px] lg:text-[16px] text-white cursor-pointer active:scale-95' onClick={() => {
+            localStorage.removeItem('signUp')
+            alert('Logged out successfully')
+            navigate('/SignIn', { replace: true })
+          }}
+          >Log Out</button> : ''}
         </div>
 
         <button
@@ -54,7 +66,7 @@ const Navbar = () => {
       {isOpen && (
         <div className='fixed inset-0 bg-black/40 z-40 flex justify-center items-start pt-20'>
           <div className='bg-white w-[80%] max-w-sm rounded-2xl p-6 relative animate-slideDown'>
-            
+
 
             <button
               className='absolute top-4 right-4 text-xl'
