@@ -23,8 +23,8 @@ const SignIn = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col gap-15 items-center bg-[url('./../public/Resume-BG.svg')]! bg-cover p-10">
-      <div className='flex justify-between items-center p-3 px-5 bg-amber-50 mx-auto rounded-full'>
+    <div className="min-h-screen flex flex-col gap-15 items-center bg-top bg-contain  bg-[url('https://cdn.dribbble.com/userupload/12556386/file/original-82c74fdc16ede820a4b43e9cb1abe45d.png?resize=1200x900&vertical=center')]! #bg-cover p-10">
+      <div className='flex justify-between border items-center p-3 px-3 bg-white mx-auto rounded-full'>
         <HomeIcon />
       </div>
       <div className="w-full max-w-[420px] text-center">
@@ -36,9 +36,9 @@ const SignIn = () => {
           Log In to Continue Your Job Journey
         </p>
 
-        <div className="relative mt-8 rounded-2xl bg-white/60 backdrop-blur-xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] px-6 py-7 sm:px-8 sm:py-8">
+        <div className="relative mt-8 rounded-4xl bg-white  #backdrop-blur-xl #shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] px-6 py-7 sm:px-8 sm:py-8">
 
-          <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-white/40" />
+          <div className="pointer-events-none absolute inset-0 rounded-2xl #ring-1 #ring-white/40" />
 
 
           <form onSubmit={handleSubmit} className="relative space-y-5">

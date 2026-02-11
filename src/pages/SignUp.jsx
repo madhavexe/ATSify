@@ -245,12 +245,12 @@ useEffect(() => {
   }
 
   return (
-        <div div className="flex flex-col gap-15 p-10 items-center bg-[url('./../public/Resume-BG.svg')]! bg-cover min-h-screen justify-center px-4 sm:px-6" >
-          <div className="flex justify-between items-center p-3 px-5 bg-amber-50 mx-auto rounded-full">
+        <div className="flex flex-col gap-15 p-10 items-center #bg-size-[90%] bg-top-right bg-contain bg-[url('https://cdn.dribbble.com/userupload/12556386/file/original-82c74fdc16ede820a4b43e9cb1abe45d.png?resize=1200x900&vertical=center')]! #bg-cover min-h-screen justify-center px-4 sm:px-6" >
+          <div className="flex justify-between bg-white items-center p-3 px-3 #bg-transparent #bg-amber-50 mx-auto rounded-full border">
             <HomeIcon />
           </div>
 
-          <div className="w-full max-w-[420px] text-center">
+          <div className="bg-transparent! w-full max-w-[420px] text-center">
             <h1 className="text-[28px] sm:text-3xl font-semibold text-gray-700">
               Create Account
             </h1>
@@ -258,7 +258,7 @@ useEffect(() => {
               Start your journey to your dream job
             </p>
 
-            <div className="relative mt-8 rounded-2xl bg-white/60 backdrop-blur-xl shadow px-6 py-7">
+            <div className="relative mt-8 rounded-4xl bg-transparent bg-white #bg-white/60 #backdrop-blur-xl shadow px-6 py-7">
               <form className="space-y-5">
                 <div className="text-left">
                   <label className="block text-xs font-medium text-gray-600 mb-1">
