@@ -15,7 +15,7 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if(email === localEmail && password === localPassword) {
-      localStorage.setItem('signUp', email)
+      localStorage.setItem('signIn', email)
       alert('Logged In Successfully')
       navigate('/')
     }
@@ -50,7 +50,8 @@ const SignIn = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                value={email}
+                // value={email}
+                defaultValue={localEmail}
                 onChange={(e) => {
                   setEmail(e.target.value)
                 }}
@@ -58,15 +59,14 @@ const SignIn = () => {
               />
             </div>
 
-
-
             <div className="text-left">
               <label className="block text-xs font-medium text-gray-600 mb-1">
                 Password
               </label>
               <input
                 type="password"
-                value={password}
+                defaultValue={localPassword}
+                // value={password}
                 onChange={(e)=>{
                   setPassword(e.target.value)
                 }}
