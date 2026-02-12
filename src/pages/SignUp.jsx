@@ -219,6 +219,7 @@ export function SignUp() {
   const [password, setPassword] = useState('')
   const [confirmPass, setConfirmPass] = useState('')
 
+  const [nameCheck, setNameCheck] = useState(false)
   const [emailErr, setEmailErr] = useState(false)
   const [passErr, setPassErr] = useState(false)
   const [passCheck, setPassCheck] = useState(false)
@@ -277,13 +278,21 @@ export function SignUp() {
                 placeholder="Enter your name"
                 value={name}
                 onChange={(e) => {
-                  setName(e.target.value)
+                  // setNameCheck(true)
+                  const value = e.target.value
+                  if(/[0-9`~!@#$%^&*()_+=?/><.,-]/.test(value)){
+                    setNameCheck(false)
+                  }else{
+                    setNameCheck(true)
+                    setName(value)
+                  }
                 }}
                 className="w-full text-black! placeholder-black! rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-indigo-400"
               />
+              {/* {/[0-9`~!@#$%^&*()_+=?/><.,-]/.test(name) ? setNameCheck(false) : ''} */}
               {/* {/[0-9]/.test(name)? <span className='text-red-500 text-[12px]'>Name can't include any number or symbol</span> :''}
             </div> */}
-              {/[0-9`~!@#$%^&*()_+=?/><.,-]/.test(name) ? setName('') : ''}
+              {/* {/[0-9`~!@#$%^&*()_+=?/><.,-]/.test(name) ? setName('') : ''} */}
             </div>
 
             <div className="text-left">
