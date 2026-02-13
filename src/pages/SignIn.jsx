@@ -51,7 +51,7 @@ const SignIn = () => {
                 type="email"
                 placeholder="Enter your email"
                 // value={email}
-                defaultValue={localEmail}
+                // defaultValue={localEmail}
                 onChange={(e) => {
                   setEmail(e.target.value)
                 }}
@@ -65,7 +65,7 @@ const SignIn = () => {
               </label>
               <input
                 type="password"
-                defaultValue={localPassword}
+                // defaultValue={localPassword}
                 // value={password}
                 onChange={(e)=>{
                   setPassword(e.target.value)
