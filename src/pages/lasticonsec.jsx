@@ -18,6 +18,7 @@ const LastIconSec = () => {
 
         const username = "yuvrajjjjjj_";
         const url = `https://instagram.com/${username}`;
+
         window.open(url,"_blank")
 
     }
