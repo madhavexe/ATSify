@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../assets/components/Navbar/Navbar';
 import { Link, useNavigate } from 'react-router-dom'
 import HomeIcon from '../assets/components/Navbar/HomeIcon';
+// import loginVIdeo from '../../public/vid.mp4'
 
 const SignIn = () => {
 
