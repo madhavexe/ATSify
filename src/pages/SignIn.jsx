@@ -16,11 +16,12 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if(email === localEmail && password === localPassword) {
-      localStorage.setItem('signIn', email)
+      localStorage.setItem('signUp', email)
       alert('Logged In Successfully')
       navigate('/')
     }
-// if(email)
+
+    
   }
 
   return (

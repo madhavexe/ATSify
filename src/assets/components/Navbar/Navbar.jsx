@@ -48,7 +48,7 @@ const Navbar = () => {
           {localSignIn && resumeUploaded ? <Button btn='Analysis' path='/Analysis' /> : ''}
           <Button btn='Contact Us' path='/ContactUs' />
           {localSignIn ? <button data-aos="fade-down" className='bton shadow-lg bg-gradient-to-r from-[#38bdf8] to-[#0ea5e9]   #bg-blue-500 rounded-full p-1 px-2 lg:p-2 lg:px-3 text-[14px] lg:text-[16px] text-white cursor-pointer active:scale-95' onClick={() => {
-            // localStorage.removeItem('signUp')
+            localStorage.removeItem('signUp')
             localStorage.removeItem('fileUploaded')
             // localStorage.removeItem('email')
             // localStorage.removeItem('name')
